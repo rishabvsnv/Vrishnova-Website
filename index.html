@@ -1,0 +1,2436 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vrishnova Labs – Building Modern Software That Scales</title>
+    <meta
+      name="description"
+      content="Vrishnova Labs helps startups, businesses, and enterprises design, build, and scale production-ready software using Flutter, React, Node.js, Supabase, Firebase, and cloud-native architecture."
+    />
+    <meta
+      name="keywords"
+      content="Flutter development, mobile app development, web development, SaaS, backend development, UI/UX design, India"
+    />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Vrishnova Labs – Building Modern Software That Scales"
+    />
+    <meta
+      property="og:description"
+      content="From idea to production. We help startups and enterprises build modern, scalable software."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vrishnova.com" />
+    <meta property="og:image" content="https://vrishnova.com/og-image.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Vrishnova Labs" />
+    <meta
+      name="twitter:description"
+      content="Building Modern Software That Scales"
+    />
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Vrishnova Labs",
+        "url": "https://vrishnova.com",
+        "logo": "https://vrishnova.com/logo.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "hello@vrishnova.com",
+          "contactType": "customer service"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "IN"
+        }
+      }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ===================== LOADER ===================== -->
+    <div id="page-loader">
+      <div class="loader-inner">
+        <div class="loader-logo">
+          <span class="loader-v">V</span>
+        </div>
+        <div class="loader-bar"><div class="loader-progress"></div></div>
+      </div>
+    </div>
+
+    <!-- ===================== NAV ===================== -->
+    <header id="navbar">
+      <nav class="nav-container">
+        <a href="#" class="nav-logo">
+          <div class="logo-mark">V</div>
+          <span class="logo-text"
+            >Vrishnova <span class="logo-accent">Labs</span></span
+          >
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#careers">Careers</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle dark mode"
+          >
+            <svg
+              class="sun-icon"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+            <svg
+              class="moon-icon"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          </button>
+          <a href="#contact" class="btn btn-primary">Book a Consultation</a>
+          <button class="hamburger" id="hamburger" aria-label="Open menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#careers">Careers</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a
+              href="#contact"
+              class="btn btn-primary"
+              style="display: inline-block; margin-top: 8px"
+              >Book a Consultation</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- ===================== HERO ===================== -->
+    <section id="hero">
+      <canvas id="particleCanvas"></canvas>
+
+      <div class="hero-gradient-blob blob-1"></div>
+      <div class="hero-gradient-blob blob-2"></div>
+      <div class="hero-gradient-blob blob-3"></div>
+
+      <div class="container hero-inner">
+        <div class="hero-content" data-aos="fade-right">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            Available for new projects
+          </div>
+          <h1 class="hero-headline">
+            Build <span class="gradient-text">Exceptional</span><br />
+            Mobile &amp; Web<br />
+            Applications
+          </h1>
+          <p class="hero-sub">
+            Vrishnova Labs helps startups, businesses, and enterprises design,
+            build, and scale production-ready software using modern technologies
+            like Flutter, React, Node.js, Supabase, Firebase, and cloud-native
+            architecture.
+          </p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary btn-lg">
+              Start Your Project
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a href="#projects" class="btn btn-ghost btn-lg"
+              >Explore Our Work</a
+            >
+          </div>
+          <div class="hero-tags">
+            <span class="tech-tag">Flutter</span>
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Supabase</span>
+            <span class="tech-tag">Firebase</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-aos="fade-left">
+          <div class="dashboard-card main-dashboard glass-card">
+            <div class="dash-header">
+              <div class="dash-dots">
+                <span style="background: #ff5f57"></span>
+                <span style="background: #ffbc2e"></span>
+                <span style="background: #28c840"></span>
+              </div>
+              <span class="dash-title">Analytics Dashboard</span>
+            </div>
+            <div class="dash-metrics">
+              <div class="metric-item">
+                <span class="metric-val">24.8K</span>
+                <span class="metric-lbl">Users</span>
+                <span class="metric-up">+12%</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-val">₹1.2M</span>
+                <span class="metric-lbl">Revenue</span>
+                <span class="metric-up">+8%</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-val">98.9%</span>
+                <span class="metric-lbl">Uptime</span>
+                <span class="metric-up">+0.3%</span>
+              </div>
+            </div>
+            <div class="dash-chart">
+              <svg viewBox="0 0 260 80" class="mini-chart">
+                <defs>
+                  <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#2563EB" stop-opacity="0.4" />
+                    <stop offset="100%" stop-color="#2563EB" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+                <path
+                  d="M0,70 L30,55 L60,45 L90,50 L120,30 L150,20 L180,25 L210,10 L240,15 L260,5 L260,80 L0,80 Z"
+                  fill="url(#chartGrad)"
+                />
+                <path
+                  d="M0,70 L30,55 L60,45 L90,50 L120,30 L150,20 L180,25 L210,10 L240,15 L260,5"
+                  fill="none"
+                  stroke="#2563EB"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <!-- Floating mobile card -->
+          <div class="floating-card mobile-card glass-card float-anim-1">
+            <div class="mobile-frame">
+              <div class="mobile-screen">
+                <div class="mobile-header-bar"></div>
+                <div class="mobile-content-bar" style="width: 70%"></div>
+                <div class="mobile-content-bar" style="width: 50%"></div>
+                <div class="mobile-btn-bar"></div>
+              </div>
+            </div>
+            <span class="card-label">Flutter App</span>
+          </div>
+
+          <!-- API connections card -->
+          <div class="floating-card api-card glass-card float-anim-2">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#7C3AED"
+              stroke-width="2"
+            >
+              <rect x="2" y="3" width="20" height="14" rx="2" />
+              <path d="M8 21h8M12 17v4" />
+            </svg>
+            <div>
+              <div class="card-label-sm">API Connected</div>
+              <div class="card-val-sm">12 endpoints live</div>
+            </div>
+          </div>
+
+          <!-- Cloud card -->
+          <div class="floating-card cloud-card glass-card float-anim-3">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#2563EB"
+              stroke-width="2"
+            >
+              <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" />
+            </svg>
+            <div>
+              <div class="card-label-sm">Cloud Deploy</div>
+              <div class="card-val-sm" style="color: #22c55e">
+                ✓ All systems go
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TRUSTED BY ===================== -->
+    <section id="trusted" class="section-sm">
+      <div class="container">
+        <p class="trusted-label">Trusted by startups and growing businesses</p>
+        <div class="logos-row">
+          <div class="logo-item">EduFlow</div>
+          <div class="logo-item">SkyLabs</div>
+          <div class="logo-item">CloudBase</div>
+          <div class="logo-item">NovaTech</div>
+          <div class="logo-item">FinCore</div>
+          <div class="logo-item">PixelWorks</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== STATS ===================== -->
+    <section id="stats" class="section-sm stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item" data-aos="fade-up" data-delay="0">
+            <div class="stat-number" data-target="50">0</div>
+            <div class="stat-suffix">+</div>
+            <div class="stat-label">Projects Delivered</div>
+          </div>
+          <div class="stat-item" data-aos="fade-up" data-delay="100">
+            <div class="stat-number" data-target="20">0</div>
+            <div class="stat-suffix">+</div>
+            <div class="stat-label">Happy Clients</div>
+          </div>
+          <div class="stat-item" data-aos="fade-up" data-delay="200">
+            <div class="stat-number" data-target="5">0</div>
+            <div class="stat-suffix">+</div>
+            <div class="stat-label">Industries Served</div>
+          </div>
+          <div class="stat-item" data-aos="fade-up" data-delay="300">
+            <div class="stat-number" data-target="99">0</div>
+            <div class="stat-suffix">%</div>
+            <div class="stat-label">Client Satisfaction</div>
+          </div>
+          <div class="stat-item" data-aos="fade-up" data-delay="400">
+            <div class="stat-number" data-target="3">0</div>
+            <div class="stat-suffix">+</div>
+            <div class="stat-label">Years Building Software</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SERVICES ===================== -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-eyebrow">What We Do</div>
+          <h2 class="section-title">End-to-End Software Services</h2>
+          <p class="section-sub">
+            From native mobile to full-stack web — we cover every layer of
+            modern software development.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <div
+            class="service-card glass-card"
+            data-aos="fade-up"
+            data-delay="0"
+          >
+            <div class="service-icon" style="--ic: #2563eb">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <rect x="5" y="2" width="14" height="20" rx="2" />
+                <line x1="12" y1="18" x2="12.01" y2="18" />
+              </svg>
+            </div>
+            <h3>Flutter App Development</h3>
+            <p>
+              Beautiful, performant cross-platform apps from a single codebase
+              for iOS, Android, and Web.
+            </p>
+            <div class="service-tags">
+              <span>Flutter</span><span>Dart</span><span>Riverpod</span>
+            </div>
+            <a href="#contact" class="service-link">Learn More →</a>
+          </div>
+
+          <div
+            class="service-card glass-card"
+            data-aos="fade-up"
+            data-delay="60"
+          >
+            <div class="service-icon" style="--ic: #7c3aed">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <rect x="5" y="2" width="14" height="20" rx="2" />
+                <polyline points="12 8 8 12 12 16" />
+                <polyline points="16 8 12 12 16 16" opacity=".4" />
+              </svg>
+            </div>
+            <h3>Native Android &amp; iOS</h3>
+            <p>
+              Platform-specific apps with full access to native APIs, hardware
+              features, and OS integrations.
+            </p>
+            <div class="service-tags">
+              <span>Kotlin</span><span>Swift</span><span>Jetpack</span>
+            </div>
+            <a href="#contact" class="service-link">Learn More →</a>
+          </div>
+
+          <div
+            class="service-card glass-card"
+            data-aos="fade-up"
+            data-delay="120"
+          >
+            <div class="service-icon" style="--ic: #0ea5e9">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+            </div>
+            <h3>Backend &amp; REST APIs</h3>
+            <p>
+              Scalable, secure server-side logic and APIs that power your mobile
+              and web frontends reliably.
+            </p>
+            <div class="service-tags">
+              <span>Node.js</span><span>Express</span><span>PHP</span>
+            </div>
+            <a href="#contact" class="service-link">Learn More →</a>
+          </div>
+
+          <div
+            class="service-card glass-card"
+            data-aos="fade-up"
+            data-delay="0"
+          >
+            <div class="service-icon" style="--ic: #22c55e">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" />
+              </svg>
+            </div>
+            <h3>Supabase &amp; Firebase</h3>
+            <p>
+              Modern BaaS integrations — auth, realtime databases, storage, and
+              serverless functions.
+            </p>
+            <div class="service-tags">
+              <span>Supabase</span><span>Firebase</span><span>PostgreSQL</span>
+            </div>
+            <a href="#contact" class="service-link">Learn More →</a>
+          </div>
+
+          <div
+            class="service-card glass-card"
+            data-aos="fade-up"
+            data-delay="60"
+          >
+            <div class="service-icon" style="--ic: #f59e0b">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <rect x="3" y="3" width="7" height="7" />
+                <rect x="14" y="3" width="7" height="7" />
+                <rect x="14" y="14" width="7" height="7" />
+                <rect x="3" y="14" width="7" height="7" />
+              </svg>
+            </div>
+            <h3>Admin Dashboards</h3>
+            <p>
+              Data-rich, role-based admin panels and analytics dashboards with
+              real-time capabilities.
+            </p>
+            <div class="service-tags">
+              <span>React</span><span>Next.js</span><span>Charts</span>
+            </div>
+            <a href="#contact" class="service-link">Learn More →</a>
+          </div>
+
+          <div
+            class="service-card glass-card"
+            data-aos="fade-up"
+            data-delay="120"
+          >
+            <div class="service-icon" style="--ic: #ec4899">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <circle cx="12" cy="12" r="3" />
+                <path
+                  d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"
+                />
+              </svg>
+            </div>
+            <h3>UI/UX Design</h3>
+            <p>
+              User-centered design with Figma prototypes, design systems, and
+              pixel-perfect implementation.
+            </p>
+            <div class="service-tags">
+              <span>Figma</span><span>Prototyping</span
+              ><span>Design Systems</span>
+            </div>
+            <a href="#contact" class="service-link">Learn More →</a>
+          </div>
+
+          <div
+            class="service-card glass-card"
+            data-aos="fade-up"
+            data-delay="0"
+          >
+            <div class="service-icon" style="--ic: #2563eb">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path
+                  d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                />
+              </svg>
+            </div>
+            <h3>Web Development</h3>
+            <p>
+              Modern, responsive websites and web applications built with
+              performance and accessibility first.
+            </p>
+            <div class="service-tags">
+              <span>React</span><span>Next.js</span><span>Tailwind</span>
+            </div>
+            <a href="#contact" class="service-link">Learn More →</a>
+          </div>
+
+          <div
+            class="service-card glass-card"
+            data-aos="fade-up"
+            data-delay="60"
+          >
+            <div class="service-icon" style="--ic: #7c3aed">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+              </svg>
+            </div>
+            <h3>Cloud Deployment</h3>
+            <p>
+              Container-based deployments, CI/CD pipelines, and cloud
+              infrastructure that scales with your growth.
+            </p>
+            <div class="service-tags">
+              <span>Docker</span><span>Vercel</span><span>GitHub Actions</span>
+            </div>
+            <a href="#contact" class="service-link">Learn More →</a>
+          </div>
+
+          <div
+            class="service-card glass-card"
+            data-aos="fade-up"
+            data-delay="120"
+          >
+            <div class="service-icon" style="--ic: #0ea5e9">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <path
+                  d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                />
+                <polyline points="14 2 14 8 20 8" />
+                <line x1="16" y1="13" x2="8" y2="13" />
+                <line x1="16" y1="17" x2="8" y2="17" />
+              </svg>
+            </div>
+            <h3>Software Consulting</h3>
+            <p>
+              Architecture reviews, tech stack selection, code audits, and
+              strategic roadmapping for your product.
+            </p>
+            <div class="service-tags">
+              <span>Architecture</span><span>Code Review</span
+              ><span>Strategy</span>
+            </div>
+            <a href="#contact" class="service-link">Learn More →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== INDUSTRIES ===================== -->
+    <section id="industries" class="section bg-alt">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-eyebrow">Industries</div>
+          <h2 class="section-title">We Build Across Every Sector</h2>
+          <p class="section-sub">
+            Deep domain experience that translates to software that actually
+            fits your business.
+          </p>
+        </div>
+        <div class="industries-grid">
+          <div class="industry-item" data-aos="fade-up" data-delay="0">
+            <div class="industry-icon">🏥</div>
+            <span>Healthcare</span>
+          </div>
+          <div class="industry-item" data-aos="fade-up" data-delay="40">
+            <div class="industry-icon">🎓</div>
+            <span>Education</span>
+          </div>
+          <div class="industry-item" data-aos="fade-up" data-delay="80">
+            <div class="industry-icon">💰</div>
+            <span>Finance</span>
+          </div>
+          <div class="industry-item" data-aos="fade-up" data-delay="120">
+            <div class="industry-icon">🛍️</div>
+            <span>Retail</span>
+          </div>
+          <div class="industry-item" data-aos="fade-up" data-delay="160">
+            <div class="industry-icon">🚚</div>
+            <span>Transportation</span>
+          </div>
+          <div class="industry-item" data-aos="fade-up" data-delay="200">
+            <div class="industry-icon">🏨</div>
+            <span>Hospitality</span>
+          </div>
+          <div class="industry-item" data-aos="fade-up" data-delay="240">
+            <div class="industry-icon">🏛️</div>
+            <span>Government</span>
+          </div>
+          <div class="industry-item" data-aos="fade-up" data-delay="280">
+            <div class="industry-icon">🚀</div>
+            <span>Startups</span>
+          </div>
+          <div class="industry-item" data-aos="fade-up" data-delay="320">
+            <div class="industry-icon">🏭</div>
+            <span>Manufacturing</span>
+          </div>
+          <div class="industry-item" data-aos="fade-up" data-delay="360">
+            <div class="industry-icon">🛒</div>
+            <span>E-Commerce</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SOLUTIONS ===================== -->
+    <section id="solutions" class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-eyebrow">Featured Solutions</div>
+          <h2 class="section-title">Ready-to-Launch Software Products</h2>
+          <p class="section-sub">
+            Pre-architected, customizable platforms that accelerate your time to
+            market.
+          </p>
+        </div>
+
+        <div class="solutions-grid">
+          <div class="solution-card" data-aos="fade-up" data-delay="0">
+            <div class="solution-icon">🏫</div>
+            <div class="solution-body">
+              <h3>School ERP</h3>
+              <p>
+                Complete school management — admissions, attendance, fees,
+                timetable, and parent communication.
+              </p>
+              <div class="solution-features">
+                <span>Student Management</span><span>Fee Collection</span
+                ><span>Parent App</span><span>Reports</span>
+              </div>
+              <div class="solution-stack">Flutter · Node.js · PostgreSQL</div>
+            </div>
+            <a href="#contact" class="btn btn-outline">Get This Solution →</a>
+          </div>
+
+          <div
+            class="solution-card featured-solution"
+            data-aos="fade-up"
+            data-delay="60"
+          >
+            <div class="solution-badge">Most Popular</div>
+            <div class="solution-icon">📊</div>
+            <div class="solution-body">
+              <h3>CRM Platform</h3>
+              <p>
+                Sales pipeline, contact management, task tracking, and reporting
+                for growing sales teams.
+              </p>
+              <div class="solution-features">
+                <span>Lead Tracking</span><span>Pipeline View</span
+                ><span>Analytics</span><span>Integrations</span>
+              </div>
+              <div class="solution-stack">React · Supabase · Node.js</div>
+            </div>
+            <a href="#contact" class="btn btn-primary">Get This Solution →</a>
+          </div>
+
+          <div class="solution-card" data-aos="fade-up" data-delay="120">
+            <div class="solution-icon">📦</div>
+            <div class="solution-body">
+              <h3>Inventory Management</h3>
+              <p>
+                Real-time stock tracking, purchase orders, barcode scanning, and
+                supplier management.
+              </p>
+              <div class="solution-features">
+                <span>Stock Alerts</span><span>Barcode Scan</span
+                ><span>Multi-Warehouse</span><span>Reports</span>
+              </div>
+              <div class="solution-stack">Flutter · Firebase · REST API</div>
+            </div>
+            <a href="#contact" class="btn btn-outline">Get This Solution →</a>
+          </div>
+
+          <div class="solution-card" data-aos="fade-up" data-delay="0">
+            <div class="solution-icon">🏥</div>
+            <div class="solution-body">
+              <h3>Hospital Management</h3>
+              <p>
+                OPD/IPD management, patient records, billing, pharmacy, and
+                appointment scheduling.
+              </p>
+              <div class="solution-features">
+                <span>Patient Records</span><span>Pharmacy</span
+                ><span>Billing</span><span>Lab Reports</span>
+              </div>
+              <div class="solution-stack">Flutter · Node.js · MySQL</div>
+            </div>
+            <a href="#contact" class="btn btn-outline">Get This Solution →</a>
+          </div>
+
+          <div class="solution-card" data-aos="fade-up" data-delay="60">
+            <div class="solution-icon">💳</div>
+            <div class="solution-body">
+              <h3>Finance Platform</h3>
+              <p>
+                Budget management, expense tracking, invoicing, and
+                multi-account financial visibility.
+              </p>
+              <div class="solution-features">
+                <span>Budgeting</span><span>Invoicing</span><span>Ledger</span
+                ><span>Reports</span>
+              </div>
+              <div class="solution-stack">Flutter · Supabase · PostgreSQL</div>
+            </div>
+            <a href="#contact" class="btn btn-outline">Get This Solution →</a>
+          </div>
+
+          <div class="solution-card" data-aos="fade-up" data-delay="120">
+            <div class="solution-icon">👥</div>
+            <div class="solution-body">
+              <h3>HRMS</h3>
+              <p>
+                Employee lifecycle management, payroll, attendance, leave, and
+                performance tracking.
+              </p>
+              <div class="solution-features">
+                <span>Payroll</span><span>Leave Mgmt</span
+                ><span>Attendance</span><span>Appraisals</span>
+              </div>
+              <div class="solution-stack">React · Node.js · PostgreSQL</div>
+            </div>
+            <a href="#contact" class="btn btn-outline">Get This Solution →</a>
+          </div>
+
+          <div class="solution-card" data-aos="fade-up" data-delay="0">
+            <div class="solution-icon">📅</div>
+            <div class="solution-body">
+              <h3>Booking System</h3>
+              <p>
+                Multi-venue appointment and reservation system with calendar
+                sync and payment integration.
+              </p>
+              <div class="solution-features">
+                <span>Calendar View</span><span>Payments</span
+                ><span>Reminders</span><span>Multi-Venue</span>
+              </div>
+              <div class="solution-stack">Flutter · Firebase · Stripe</div>
+            </div>
+            <a href="#contact" class="btn btn-outline">Get This Solution →</a>
+          </div>
+
+          <div class="solution-card" data-aos="fade-up" data-delay="60">
+            <div class="solution-icon">📚</div>
+            <div class="solution-body">
+              <h3>Learning Management</h3>
+              <p>
+                Online course delivery, assessments, progress tracking, and
+                certificate generation.
+              </p>
+              <div class="solution-features">
+                <span>Video Courses</span><span>Quizzes</span
+                ><span>Certificates</span><span>Progress</span>
+              </div>
+              <div class="solution-stack">React · Supabase · FFmpeg</div>
+            </div>
+            <a href="#contact" class="btn btn-outline">Get This Solution →</a>
+          </div>
+
+          <div class="solution-card" data-aos="fade-up" data-delay="120">
+            <div class="solution-icon">🪪</div>
+            <div class="solution-body">
+              <h3>Visitor Management</h3>
+              <p>
+                Digital check-in, badge printing, host notifications, and
+                visitor history for secure premises.
+              </p>
+              <div class="solution-features">
+                <span>QR Check-In</span><span>Badges</span
+                ><span>Notifications</span><span>History</span>
+              </div>
+              <div class="solution-stack">Flutter · Node.js · MongoDB</div>
+            </div>
+            <a href="#contact" class="btn btn-outline">Get This Solution →</a>
+          </div>
+
+          <div class="solution-card" data-aos="fade-up" data-delay="180">
+            <div class="solution-icon">⏰</div>
+            <div class="solution-body">
+              <h3>Attendance Management</h3>
+              <p>
+                Biometric, QR, and GPS-based attendance with shift management
+                and overtime calculation.
+              </p>
+              <div class="solution-features">
+                <span>Biometric</span><span>GPS Fencing</span><span>Shifts</span
+                ><span>Reports</span>
+              </div>
+              <div class="solution-stack">Flutter · Firebase · Node.js</div>
+            </div>
+            <a href="#contact" class="btn btn-outline">Get This Solution →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TECHNOLOGIES ===================== -->
+    <section id="technologies" class="section bg-alt">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-eyebrow">Tech Stack</div>
+          <h2 class="section-title">Technologies We Master</h2>
+          <p class="section-sub">
+            A carefully chosen, modern toolkit that prioritizes performance,
+            scalability, and developer experience.
+          </p>
+        </div>
+
+        <div class="tech-categories">
+          <div class="tech-category" data-aos="fade-up" data-delay="0">
+            <h4 class="tech-cat-title">📱 Mobile</h4>
+            <div class="tech-badges">
+              <span class="tech-badge badge-blue">Flutter</span>
+              <span class="tech-badge badge-blue">Dart</span>
+              <span class="tech-badge badge-blue">Android</span>
+              <span class="tech-badge badge-blue">iOS</span>
+              <span class="tech-badge badge-blue">Riverpod</span>
+              <span class="tech-badge badge-blue">GetX</span>
+            </div>
+          </div>
+
+          <div class="tech-category" data-aos="fade-up" data-delay="80">
+            <h4 class="tech-cat-title">🌐 Frontend</h4>
+            <div class="tech-badges">
+              <span class="tech-badge badge-purple">HTML5</span>
+              <span class="tech-badge badge-purple">CSS3</span>
+              <span class="tech-badge badge-purple">JavaScript</span>
+              <span class="tech-badge badge-purple">React</span>
+              <span class="tech-badge badge-purple">Next.js</span>
+              <span class="tech-badge badge-purple">Tailwind</span>
+            </div>
+          </div>
+
+          <div class="tech-category" data-aos="fade-up" data-delay="160">
+            <h4 class="tech-cat-title">⚙️ Backend</h4>
+            <div class="tech-badges">
+              <span class="tech-badge badge-green">Node.js</span>
+              <span class="tech-badge badge-green">Express</span>
+              <span class="tech-badge badge-green">PHP</span>
+              <span class="tech-badge badge-green">CodeIgniter</span>
+              <span class="tech-badge badge-green">Supabase</span>
+              <span class="tech-badge badge-green">Firebase</span>
+            </div>
+          </div>
+
+          <div class="tech-category" data-aos="fade-up" data-delay="240">
+            <h4 class="tech-cat-title">🗄️ Databases</h4>
+            <div class="tech-badges">
+              <span class="tech-badge badge-orange">PostgreSQL</span>
+              <span class="tech-badge badge-orange">MySQL</span>
+              <span class="tech-badge badge-orange">SQLite</span>
+              <span class="tech-badge badge-orange">MongoDB</span>
+            </div>
+          </div>
+
+          <div class="tech-category" data-aos="fade-up" data-delay="320">
+            <h4 class="tech-cat-title">☁️ Cloud &amp; DevOps</h4>
+            <div class="tech-badges">
+              <span class="tech-badge badge-slate">Docker</span>
+              <span class="tech-badge badge-slate">GitHub Actions</span>
+              <span class="tech-badge badge-slate">Cloudflare</span>
+              <span class="tech-badge badge-slate">Vercel</span>
+              <span class="tech-badge badge-slate">Git</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROCESS ===================== -->
+    <section id="process" class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-eyebrow">How We Work</div>
+          <h2 class="section-title">Our Development Process</h2>
+          <p class="section-sub">
+            A transparent, repeatable process that keeps you informed at every
+            stage.
+          </p>
+        </div>
+
+        <div class="process-timeline">
+          <div class="process-step" data-aos="fade-up" data-delay="0">
+            <div class="step-number">01</div>
+            <div class="step-content">
+              <div class="step-icon">🔍</div>
+              <h3>Discovery</h3>
+              <p>
+                We study your business goals, users, and market. Deep workshops
+                to uncover requirements and define success metrics.
+              </p>
+            </div>
+          </div>
+          <div class="process-connector"></div>
+          <div class="process-step" data-aos="fade-up" data-delay="80">
+            <div class="step-number">02</div>
+            <div class="step-content">
+              <div class="step-icon">🗺️</div>
+              <h3>Planning</h3>
+              <p>
+                Detailed project plan, tech stack selection, architecture
+                design, and timeline with clear milestones.
+              </p>
+            </div>
+          </div>
+          <div class="process-connector"></div>
+          <div class="process-step" data-aos="fade-up" data-delay="160">
+            <div class="step-number">03</div>
+            <div class="step-content">
+              <div class="step-icon">🎨</div>
+              <h3>UI/UX Design</h3>
+              <p>
+                Wireframes, high-fidelity Figma prototypes, design systems, and
+                user testing before a single line of code.
+              </p>
+            </div>
+          </div>
+          <div class="process-connector"></div>
+          <div class="process-step" data-aos="fade-up" data-delay="240">
+            <div class="step-number">04</div>
+            <div class="step-content">
+              <div class="step-icon">💻</div>
+              <h3>Development</h3>
+              <p>
+                Agile sprints with weekly demos. Clean, documented, and scalable
+                code following industry best practices.
+              </p>
+            </div>
+          </div>
+          <div class="process-connector"></div>
+          <div class="process-step" data-aos="fade-up" data-delay="320">
+            <div class="step-number">05</div>
+            <div class="step-content">
+              <div class="step-icon">🧪</div>
+              <h3>Testing</h3>
+              <p>
+                Unit, integration, and end-to-end tests. Performance profiling,
+                security audits, and UAT with your team.
+              </p>
+            </div>
+          </div>
+          <div class="process-connector"></div>
+          <div class="process-step" data-aos="fade-up" data-delay="400">
+            <div class="step-number">06</div>
+            <div class="step-content">
+              <div class="step-icon">🚀</div>
+              <h3>Deployment</h3>
+              <p>
+                Zero-downtime deployment via CI/CD pipelines. App Store
+                submissions, server provisioning, and go-live support.
+              </p>
+            </div>
+          </div>
+          <div class="process-connector"></div>
+          <div class="process-step" data-aos="fade-up" data-delay="480">
+            <div class="step-number">07</div>
+            <div class="step-content">
+              <div class="step-icon">🛠️</div>
+              <h3>Maintenance</h3>
+              <p>
+                Ongoing monitoring, updates, bug fixes, and feature additions to
+                keep your software running at peak performance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== WHY US ===================== -->
+    <section id="about" class="section bg-alt">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-eyebrow">Why Vrishnova Labs</div>
+          <h2 class="section-title">Built Different, Delivered Better</h2>
+          <p class="section-sub">
+            Principles we ship with, not just talk about.
+          </p>
+        </div>
+        <div class="why-grid">
+          <div class="why-item" data-aos="fade-up" data-delay="0">
+            <span class="why-check">✓</span>
+            <div>
+              <strong>Responsive Design</strong>
+              <p>
+                Every pixel adapts — desktop, tablet, and mobile look equally
+                sharp.
+              </p>
+            </div>
+          </div>
+          <div class="why-item" data-aos="fade-up" data-delay="40">
+            <span class="why-check">✓</span>
+            <div>
+              <strong>Clean Architecture</strong>
+              <p>
+                SOLID principles and separation of concerns for code that's a
+                joy to extend.
+              </p>
+            </div>
+          </div>
+          <div class="why-item" data-aos="fade-up" data-delay="80">
+            <span class="why-check">✓</span>
+            <div>
+              <strong>Scalable Code</strong>
+              <p>
+                From 10 users to 100,000 — the architecture handles it without a
+                rewrite.
+              </p>
+            </div>
+          </div>
+          <div class="why-item" data-aos="fade-up" data-delay="120">
+            <span class="why-check">✓</span>
+            <div>
+              <strong>Fast Delivery</strong>
+              <p>
+                Iterative sprints mean you see working software every week, not
+                quarterly.
+              </p>
+            </div>
+          </div>
+          <div class="why-item" data-aos="fade-up" data-delay="160">
+            <span class="why-check">✓</span>
+            <div>
+              <strong>Transparent Communication</strong>
+              <p>
+                Daily standups, weekly demos, and a shared project board — no
+                black boxes.
+              </p>
+            </div>
+          </div>
+          <div class="why-item" data-aos="fade-up" data-delay="200">
+            <span class="why-check">✓</span>
+            <div>
+              <strong>Performance Optimized</strong>
+              <p>
+                Sub-second load times, lazy loading, and Lighthouse scores that
+                matter.
+              </p>
+            </div>
+          </div>
+          <div class="why-item" data-aos="fade-up" data-delay="240">
+            <span class="why-check">✓</span>
+            <div>
+              <strong>Secure Applications</strong>
+              <p>
+                OWASP-aligned, encrypted at rest and in transit, with regular
+                security audits.
+              </p>
+            </div>
+          </div>
+          <div class="why-item" data-aos="fade-up" data-delay="280">
+            <span class="why-check">✓</span>
+            <div>
+              <strong>Offline Support</strong>
+              <p>
+                Flutter apps with local-first architecture — they work without
+                internet too.
+              </p>
+            </div>
+          </div>
+          <div class="why-item" data-aos="fade-up" data-delay="320">
+            <span class="why-check">✓</span>
+            <div>
+              <strong>Continuous Maintenance</strong>
+              <p>
+                We stay post-launch — monitoring, updates, and new features as
+                you grow.
+              </p>
+            </div>
+          </div>
+          <div class="why-item" data-aos="fade-up" data-delay="360">
+            <span class="why-check">✓</span>
+            <div>
+              <strong>Modern UI/UX</strong>
+              <p>
+                Design systems and component libraries that make your product
+                unforgettable.
+              </p>
+            </div>
+          </div>
+          <div class="why-item" data-aos="fade-up" data-delay="400">
+            <span class="why-check">✓</span>
+            <div>
+              <strong>SEO Friendly</strong>
+              <p>
+                Server-side rendering, semantic HTML, and structured data that
+                ranks.
+              </p>
+            </div>
+          </div>
+          <div class="why-item" data-aos="fade-up" data-delay="440">
+            <span class="why-check">✓</span>
+            <div>
+              <strong>Cloud Ready</strong>
+              <p>
+                Containerized, horizontally scalable, and deployable to any
+                cloud provider.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PORTFOLIO ===================== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-eyebrow">Portfolio</div>
+          <h2 class="section-title">Projects We're Proud Of</h2>
+          <p class="section-sub">
+            Real software delivering real results for real clients.
+          </p>
+        </div>
+
+        <div class="portfolio-grid">
+          <div class="portfolio-card" data-aos="fade-up" data-delay="0">
+            <div
+              class="portfolio-preview"
+              style="background: linear-gradient(135deg, #2563eb22, #7c3aed22)"
+            >
+              <div class="portfolio-mockup">
+                <div class="pm-bar"></div>
+                <div class="pm-content">
+                  <div class="pm-row"></div>
+                  <div class="pm-row short"></div>
+                  <div class="pm-cards">
+                    <div class="pm-card"></div>
+                    <div class="pm-card"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <div class="portfolio-tags">
+                <span>Flutter</span><span>Riverpod</span><span>REST APIs</span
+                ><span>Offline</span>
+              </div>
+              <h3>MySchoolio</h3>
+              <p class="portfolio-sub">School ERP</p>
+              <p>
+                Complete school management platform with offline-first Flutter
+                app for teachers, students, and parents. Reduced administrative
+                overhead by 60%.
+              </p>
+              <a href="#contact" class="portfolio-link">View Case Study →</a>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-aos="fade-up" data-delay="80">
+            <div
+              class="portfolio-preview"
+              style="background: linear-gradient(135deg, #7c3aed22, #ec489922)"
+            >
+              <div class="portfolio-mockup">
+                <div class="pm-bar"></div>
+                <div class="pm-content">
+                  <div class="pm-row"></div>
+                  <div class="pm-row short"></div>
+                  <div class="pm-cards">
+                    <div class="pm-card"></div>
+                    <div class="pm-card"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <div class="portfolio-tags">
+                <span>Flutter</span><span>Backend APIs</span
+                ><span>SIM Management</span>
+              </div>
+              <h3>easySIM</h3>
+              <p class="portfolio-sub">SIM Management Platform</p>
+              <p>
+                Enterprise SIM lifecycle management system with activation,
+                tracking, and analytics. Processing 50K+ SIM operations monthly.
+              </p>
+              <a href="#contact" class="portfolio-link">View Case Study →</a>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-aos="fade-up" data-delay="160">
+            <div
+              class="portfolio-preview"
+              style="background: linear-gradient(135deg, #22c55e22, #2563eb22)"
+            >
+              <div class="portfolio-mockup">
+                <div class="pm-bar"></div>
+                <div class="pm-content">
+                  <div class="pm-row"></div>
+                  <div class="pm-row short"></div>
+                  <div class="pm-cards">
+                    <div class="pm-card"></div>
+                    <div class="pm-card"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <div class="portfolio-tags">
+                <span>Flutter</span><span>Finance</span><span>Offline</span>
+              </div>
+              <h3>Dolfin</h3>
+              <p class="portfolio-sub">Ledger Application</p>
+              <p>
+                Personal and business ledger app with offline sync,
+                multi-account support, and detailed financial reports. 4.8★ on
+                Play Store.
+              </p>
+              <a href="#contact" class="portfolio-link">View Case Study →</a>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-aos="fade-up" data-delay="0">
+            <div
+              class="portfolio-preview"
+              style="background: linear-gradient(135deg, #f59e0b22, #ec489922)"
+            >
+              <div class="portfolio-mockup">
+                <div class="pm-bar"></div>
+                <div class="pm-content">
+                  <div class="pm-row"></div>
+                  <div class="pm-row short"></div>
+                  <div class="pm-cards">
+                    <div class="pm-card"></div>
+                    <div class="pm-card"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <div class="portfolio-tags">
+                <span>React</span><span>Node.js</span><span>PostgreSQL</span>
+              </div>
+              <h3>Inventory Pro</h3>
+              <p class="portfolio-sub">Inventory System</p>
+              <p>
+                Multi-warehouse inventory management with barcode scanning,
+                purchase orders, and supplier management for a regional
+                distributor.
+              </p>
+              <a href="#contact" class="portfolio-link">View Case Study →</a>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-aos="fade-up" data-delay="80">
+            <div
+              class="portfolio-preview"
+              style="background: linear-gradient(135deg, #0ea5e922, #7c3aed22)"
+            >
+              <div class="portfolio-mockup">
+                <div class="pm-bar"></div>
+                <div class="pm-content">
+                  <div class="pm-row"></div>
+                  <div class="pm-row short"></div>
+                  <div class="pm-cards">
+                    <div class="pm-card"></div>
+                    <div class="pm-card"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <div class="portfolio-tags">
+                <span>React</span><span>Supabase</span><span>Charts</span>
+              </div>
+              <h3>SalesForce CRM</h3>
+              <p class="portfolio-sub">CRM Dashboard</p>
+              <p>
+                Full-featured CRM with lead pipeline, task management, email
+                integration, and real-time sales analytics. Deployed for 200+
+                users.
+              </p>
+              <a href="#contact" class="portfolio-link">View Case Study →</a>
+            </div>
+          </div>
+
+          <div class="portfolio-card" data-aos="fade-up" data-delay="160">
+            <div
+              class="portfolio-preview"
+              style="background: linear-gradient(135deg, #ef444422, #f59e0b22)"
+            >
+              <div class="portfolio-mockup">
+                <div class="pm-bar"></div>
+                <div class="pm-content">
+                  <div class="pm-row"></div>
+                  <div class="pm-row short"></div>
+                  <div class="pm-cards">
+                    <div class="pm-card"></div>
+                    <div class="pm-card"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <div class="portfolio-tags">
+                <span>Flutter</span><span>Node.js</span><span>MySQL</span>
+              </div>
+              <h3>MediCore HMS</h3>
+              <p class="portfolio-sub">Hospital Management</p>
+              <p>
+                End-to-end hospital management covering OPD/IPD, pharmacy, lab,
+                billing, and bed management for a 200-bed hospital.
+              </p>
+              <a href="#contact" class="portfolio-link">View Case Study →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS ===================== -->
+    <section id="testimonials" class="section bg-alt">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-eyebrow">Client Love</div>
+          <h2 class="section-title">What Our Clients Say</h2>
+          <p class="section-sub">The outcomes speak for themselves.</p>
+        </div>
+
+        <div class="testimonials-wrapper">
+          <div class="testimonials-track" id="testimonialsTrack">
+            <div class="testimonial-card glass-card">
+              <div class="stars">★★★★★</div>
+              <p>
+                "Vrishnova Labs transformed our school's operations. The Flutter
+                app they built is fast, beautiful, and the teachers actually
+                enjoy using it. A true partner, not just a vendor."
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar" style="background: #2563eb">RK</div>
+                <div>
+                  <strong>Rajesh Kumar</strong>
+                  <span>Director, Sunrise Academy</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card glass-card">
+              <div class="stars">★★★★★</div>
+              <p>
+                "Our SIM management platform went from concept to production in
+                12 weeks. The team was communicative throughout and delivered a
+                system that processes thousands of transactions daily."
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar" style="background: #7c3aed">PM</div>
+                <div>
+                  <strong>Priya Mehta</strong>
+                  <span>CTO, TeleSwift Networks</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card glass-card">
+              <div class="stars">★★★★★</div>
+              <p>
+                "We'd tried two other agencies before Vrishnova. The difference
+                was night and day — clean code, proper documentation, and a team
+                that actually understood our finance domain."
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar" style="background: #22c55e">AS</div>
+                <div>
+                  <strong>Anil Sharma</strong>
+                  <span>Founder, FinBridge</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card glass-card">
+              <div class="stars">★★★★★</div>
+              <p>
+                "The CRM they built for us has become the backbone of our sales
+                process. Real-time insights that used to take our team hours to
+                compile now just appear on the dashboard."
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar" style="background: #f59e0b">SD</div>
+                <div>
+                  <strong>Sanya Dubey</strong>
+                  <span>VP Sales, GrowthCo</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card glass-card">
+              <div class="stars">★★★★★</div>
+              <p>
+                "Brilliant UI/UX work. Vrishnova redesigned our patient-facing
+                app and satisfaction scores jumped immediately. They understand
+                that software is also an experience."
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar" style="background: #ec4899">NK</div>
+                <div>
+                  <strong>Dr. Neha Kapoor</strong>
+                  <span>Medical Director, CareFirst</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card glass-card">
+              <div class="stars">★★★★★</div>
+              <p>
+                "From the first call, the team was transparent about timeline
+                and scope. They delivered exactly what was promised, on
+                schedule, with exceptional post-launch support."
+              </p>
+              <div class="testimonial-author">
+                <div class="author-avatar" style="background: #0ea5e9">VR</div>
+                <div>
+                  <strong>Vikram Rao</strong>
+                  <span>CEO, StartupNest</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonials-controls">
+            <button class="tctl-btn" id="prevTestimonial" aria-label="Previous">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="15 18 9 12 15 6" />
+              </svg>
+            </button>
+            <div class="tctl-dots" id="testimonialDots"></div>
+            <button class="tctl-btn" id="nextTestimonial" aria-label="Next">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="9 18 15 12 9 6" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PRICING ===================== -->
+    <section id="pricing" class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-eyebrow">Pricing</div>
+          <h2 class="section-title">Transparent, Flexible Engagement</h2>
+          <p class="section-sub">
+            Every project is unique. These are starting frameworks — we'll scope
+            yours precisely.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          <div
+            class="pricing-card glass-card"
+            data-aos="fade-up"
+            data-delay="0"
+          >
+            <div class="pricing-header">
+              <h3>Starter</h3>
+              <p>For MVPs and proof-of-concept projects</p>
+            </div>
+            <div class="pricing-price">Custom<span> / project</span></div>
+            <ul class="pricing-features">
+              <li>✓ Up to 5 core screens</li>
+              <li>✓ Single platform (iOS or Android)</li>
+              <li>✓ Basic backend & API</li>
+              <li>✓ 3-month timeline</li>
+              <li>✓ 1 month post-launch support</li>
+              <li>✓ Weekly progress updates</li>
+            </ul>
+            <a
+              href="#contact"
+              class="btn btn-outline"
+              style="width: 100%; text-align: center"
+              >Request Proposal</a
+            >
+          </div>
+
+          <div
+            class="pricing-card pricing-featured glass-card"
+            data-aos="fade-up"
+            data-delay="80"
+          >
+            <div class="pricing-badge">Most Popular</div>
+            <div class="pricing-header">
+              <h3>Business</h3>
+              <p>For full-featured products and SaaS platforms</p>
+            </div>
+            <div class="pricing-price">Custom<span> / project</span></div>
+            <ul class="pricing-features">
+              <li>✓ Unlimited screens</li>
+              <li>✓ Cross-platform (iOS + Android + Web)</li>
+              <li>✓ Full backend, auth, and admin panel</li>
+              <li>✓ 3–6 month timeline</li>
+              <li>✓ 3 months post-launch support</li>
+              <li>✓ CI/CD & cloud deployment</li>
+              <li>✓ Dedicated project manager</li>
+            </ul>
+            <a
+              href="#contact"
+              class="btn btn-primary"
+              style="width: 100%; text-align: center"
+              >Request Proposal</a
+            >
+          </div>
+
+          <div
+            class="pricing-card glass-card"
+            data-aos="fade-up"
+            data-delay="160"
+          >
+            <div class="pricing-header">
+              <h3>Enterprise</h3>
+              <p>For complex, mission-critical systems</p>
+            </div>
+            <div class="pricing-price">Custom<span> / project</span></div>
+            <ul class="pricing-features">
+              <li>✓ Enterprise architecture</li>
+              <li>✓ Multi-platform, multi-tenant</li>
+              <li>✓ Security audits & compliance</li>
+              <li>✓ Flexible timeline</li>
+              <li>✓ 12 months SLA support</li>
+              <li>✓ Dedicated team</li>
+              <li>✓ On-site visits available</li>
+            </ul>
+            <a
+              href="#contact"
+              class="btn btn-outline"
+              style="width: 100%; text-align: center"
+              >Request Proposal</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section id="faq" class="section bg-alt">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-eyebrow">FAQ</div>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item" data-aos="fade-up">
+            <button class="faq-question">
+              How long does a project typically take?
+              <svg
+                class="faq-arrow"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                It depends on scope. An MVP typically takes 8–12 weeks. A
+                fully-featured business product ranges from 3–6 months.
+                Enterprise systems vary. After an initial discovery call, we'll
+                give you a detailed timeline with milestones.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-aos="fade-up">
+            <button class="faq-question">
+              Do you provide ongoing maintenance after launch?
+              <svg
+                class="faq-arrow"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes. All plans include a post-launch support period, and we
+                offer ongoing retainer-based maintenance packages covering bug
+                fixes, OS updates, security patches, and feature additions.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-aos="fade-up">
+            <button class="faq-question">
+              Can you redesign or rebuild an existing application?
+              <svg
+                class="faq-arrow"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Absolutely. We handle full redesigns (UX/UI overhauls),
+                refactors (code cleanup without changing features), and complete
+                rebuilds (migrating legacy systems to modern tech stacks). We'll
+                assess your current codebase first.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-aos="fade-up">
+            <button class="faq-question">
+              Do you build MVPs for startups?
+              <svg
+                class="faq-arrow"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes, and we love it. We apply a "build fast, build right"
+                approach — choosing tech stacks that let you move quickly
+                without creating technical debt that strangles growth. Many of
+                our clients started with MVPs and expanded with us.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-aos="fade-up">
+            <button class="faq-question">
+              Can you integrate with our existing APIs and systems?
+              <svg
+                class="faq-arrow"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes. We integrate with third-party APIs, legacy backends,
+                payment gateways (Razorpay, Stripe), communication platforms
+                (WhatsApp, Twilio), analytics, ERPs, and more. If there's a
+                documented API, we can connect to it.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-aos="fade-up">
+            <button class="faq-question">
+              Who owns the code after delivery?
+              <svg
+                class="faq-arrow"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                You do, completely. Upon final payment, all intellectual
+                property, source code, assets, and deployment access transfer to
+                you. We'll also provide complete documentation so your internal
+                team can take over if needed.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-aos="fade-up">
+            <button class="faq-question">
+              Do you work with international clients?
+              <svg
+                class="faq-arrow"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes. We work with clients across India, Southeast Asia, the
+                Middle East, and Europe. We accommodate time zones for meetings
+                and use async-first communication via Slack, Notion, and Jira to
+                keep projects moving.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-aos="fade-up">
+            <button class="faq-question">
+              What's your payment structure?
+              <svg
+                class="faq-arrow"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Typically 30% upfront, 40% at mid-project milestone, and 30% on
+                delivery. For longer projects, we use monthly billing tied to
+                sprint deliverables. We accept bank transfers, UPI, and
+                international wire transfers.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-aos="fade-up">
+            <button class="faq-question">
+              Do you sign NDAs?
+              <svg
+                class="faq-arrow"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes. We routinely sign NDAs before discussions involving
+                sensitive business information, proprietary data, or unreleased
+                product ideas. Protecting your confidentiality is a standard
+                part of our engagement process.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-aos="fade-up">
+            <button class="faq-question">
+              Can I hire a dedicated developer from your team?
+              <svg
+                class="faq-arrow"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes. We offer staff augmentation — dedicated Flutter, backend,
+                or frontend developers who work as part of your team on a
+                monthly retainer. They attend your standups, use your tools, and
+                report to your project leads.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== BLOG ===================== -->
+    <section id="blog" class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-eyebrow">Insights</div>
+          <h2 class="section-title">From Our Blog</h2>
+          <p class="section-sub">
+            Engineering insights, industry thoughts, and practical guides from
+            the Vrishnova team.
+          </p>
+        </div>
+
+        <div class="blog-grid">
+          <div class="blog-card" data-aos="fade-up" data-delay="0">
+            <div
+              class="blog-cover"
+              style="background: linear-gradient(135deg, #2563eb, #7c3aed)"
+            >
+              <span class="blog-cat">Flutter</span>
+            </div>
+            <div class="blog-body">
+              <div class="blog-date">June 15, 2026</div>
+              <h3>Flutter Best Practices for Production Apps</h3>
+              <p>
+                State management patterns, folder structure, and performance
+                tips that scale from prototype to production.
+              </p>
+              <a href="#" class="blog-link">Read More →</a>
+            </div>
+          </div>
+
+          <div class="blog-card" data-aos="fade-up" data-delay="60">
+            <div
+              class="blog-cover"
+              style="background: linear-gradient(135deg, #0ea5e9, #2563eb)"
+            >
+              <span class="blog-cat">Architecture</span>
+            </div>
+            <div class="blog-body">
+              <div class="blog-date">May 28, 2026</div>
+              <h3>Scaling Mobile Apps: From 1K to 1M Users</h3>
+              <p>
+                Database design, caching strategies, and backend architecture
+                decisions that let your app grow without breaking.
+              </p>
+              <a href="#" class="blog-link">Read More →</a>
+            </div>
+          </div>
+
+          <div class="blog-card" data-aos="fade-up" data-delay="120">
+            <div
+              class="blog-cover"
+              style="background: linear-gradient(135deg, #7c3aed, #ec4899)"
+            >
+              <span class="blog-cat">Engineering</span>
+            </div>
+            <div class="blog-body">
+              <div class="blog-date">May 10, 2026</div>
+              <h3>Clean Architecture Explained with Flutter</h3>
+              <p>
+                A practical guide to implementing Clean Architecture in Flutter
+                — repositories, use cases, and dependency injection done right.
+              </p>
+              <a href="#" class="blog-link">Read More →</a>
+            </div>
+          </div>
+
+          <div class="blog-card" data-aos="fade-up" data-delay="0">
+            <div
+              class="blog-cover"
+              style="background: linear-gradient(135deg, #22c55e, #0ea5e9)"
+            >
+              <span class="blog-cat">SaaS</span>
+            </div>
+            <div class="blog-body">
+              <div class="blog-date">April 22, 2026</div>
+              <h3>How to Build SaaS Products Faster in 2026</h3>
+              <p>
+                The modern SaaS stack — Supabase, Vercel, Stripe, and Resend —
+                that lets a two-person team ship like a ten-person team.
+              </p>
+              <a href="#" class="blog-link">Read More →</a>
+            </div>
+          </div>
+
+          <div class="blog-card" data-aos="fade-up" data-delay="60">
+            <div
+              class="blog-cover"
+              style="background: linear-gradient(135deg, #f59e0b, #ef4444)"
+            >
+              <span class="blog-cat">Backend</span>
+            </div>
+            <div class="blog-body">
+              <div class="blog-date">April 5, 2026</div>
+              <h3>Supabase vs Firebase: A 2026 Comparison</h3>
+              <p>
+                Side-by-side comparison of pricing, performance, SQL vs NoSQL,
+                and which one to choose for your next project.
+              </p>
+              <a href="#" class="blog-link">Read More →</a>
+            </div>
+          </div>
+
+          <div class="blog-card" data-aos="fade-up" data-delay="120">
+            <div
+              class="blog-cover"
+              style="background: linear-gradient(135deg, #2563eb, #22c55e)"
+            >
+              <span class="blog-cat">Performance</span>
+            </div>
+            <div class="blog-body">
+              <div class="blog-date">March 18, 2026</div>
+              <h3>Flutter Performance Optimization Tips</h3>
+              <p>
+                Frame drops, jank, and memory leaks — how to profile your
+                Flutter app and fix the top performance bottlenecks.
+              </p>
+              <a href="#" class="blog-link">Read More →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CAREERS ===================== -->
+    <section id="careers" class="section bg-alt">
+      <div class="container">
+        <div class="careers-inner" data-aos="fade-up">
+          <div class="careers-text">
+            <div class="section-eyebrow">Careers</div>
+            <h2 class="section-title">Build the Future With Us</h2>
+            <p>
+              We're always looking for passionate developers, designers, and
+              innovators who care deeply about craft, communication, and
+              shipping great software.
+            </p>
+          </div>
+          <div class="open-positions">
+            <div class="position-item">
+              <div class="position-info">
+                <strong>Flutter Developer</strong>
+                <span>Full-time · Remote</span>
+              </div>
+              <a
+                href="mailto:careers@vrishnova.com"
+                class="btn btn-outline btn-sm"
+                >Apply Now</a
+              >
+            </div>
+            <div class="position-item">
+              <div class="position-info">
+                <strong>Frontend Engineer</strong>
+                <span>Full-time · Remote</span>
+              </div>
+              <a
+                href="mailto:careers@vrishnova.com"
+                class="btn btn-outline btn-sm"
+                >Apply Now</a
+              >
+            </div>
+            <div class="position-item">
+              <div class="position-info">
+                <strong>Backend Developer</strong>
+                <span>Full-time · Remote</span>
+              </div>
+              <a
+                href="mailto:careers@vrishnova.com"
+                class="btn btn-outline btn-sm"
+                >Apply Now</a
+              >
+            </div>
+            <div class="position-item">
+              <div class="position-info">
+                <strong>UI/UX Designer</strong>
+                <span>Full-time · Remote</span>
+              </div>
+              <a
+                href="mailto:careers@vrishnova.com"
+                class="btn btn-outline btn-sm"
+                >Apply Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-eyebrow">Get In Touch</div>
+          <h2 class="section-title">Let's Build Something Great</h2>
+          <p class="section-sub">
+            Tell us about your project and we'll respond within one business
+            day.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info" data-aos="fade-right">
+            <h3>Vrishnova Labs</h3>
+            <p>
+              From idea to production — we're with you every step of the way.
+            </p>
+
+            <div class="contact-detail">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="var(--primary)"
+                stroke-width="2"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              <a href="mailto:hello@vrishnova.com">hello@vrishnova.com</a>
+            </div>
+
+            <div class="contact-detail">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="var(--primary)"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+              <span>Mon–Fri, 9 AM – 6 PM IST</span>
+            </div>
+
+            <div class="contact-detail">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="var(--primary)"
+                stroke-width="2"
+              >
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <span>India</span>
+            </div>
+
+            <div class="contact-socials">
+              <a href="#" class="social-link" aria-label="LinkedIn">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"
+                  />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="GitHub">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="X / Twitter">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Instagram">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap glass-card" data-aos="fade-left">
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Full Name *</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Rajesh Kumar"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email *</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="rajesh@company.com"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="company">Company</label>
+                  <input
+                    type="text"
+                    id="company"
+                    name="company"
+                    placeholder="Your Company"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="+91 98765 43210"
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="project_type">Project Type</label>
+                  <select id="project_type" name="project_type">
+                    <option value="">Select project type</option>
+                    <option>Flutter Mobile App</option>
+                    <option>Web Application</option>
+                    <option>Backend API</option>
+                    <option>Full-Stack SaaS</option>
+                    <option>UI/UX Design</option>
+                    <option>Consulting</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="budget">Budget Range</label>
+                  <select id="budget" name="budget">
+                    <option value="">Select budget</option>
+                    <option>Under ₹2L</option>
+                    <option>₹2L – ₹5L</option>
+                    <option>₹5L – ₹15L</option>
+                    <option>₹15L – ₹50L</option>
+                    <option>₹50L+</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message">Project Details *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Tell us about your project, goals, and timeline..."
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width: 100%">
+                Send Message
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <path d="M22 2L11 13" />
+                  <path d="M22 2L15 22 11 13 2 9l20-7z" />
+                </svg>
+              </button>
+              <div id="formMessage" class="form-feedback"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="#" class="nav-logo">
+              <div class="logo-mark">V</div>
+              <span class="logo-text"
+                >Vrishnova <span class="logo-accent">Labs</span></span
+              >
+            </a>
+            <p>Building software that powers the future.</p>
+            <div class="contact-socials" style="margin-top: 16px">
+              <a href="#" class="social-link" aria-label="LinkedIn">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"
+                  />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="GitHub">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="X">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Instagram">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-links-group">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#services">Flutter Development</a></li>
+              <li><a href="#services">Backend & APIs</a></li>
+              <li><a href="#services">Web Development</a></li>
+              <li><a href="#services">UI/UX Design</a></li>
+              <li><a href="#services">Cloud Deployment</a></li>
+              <li><a href="#services">Consulting</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links-group">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#projects">Portfolio</a></li>
+              <li><a href="#process">Process</a></li>
+              <li><a href="#careers">Careers</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links-group">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Vrishnova Labs. All rights reserved.</p>
+          <p>Made with ❤️ in India</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===================== BACK TO TOP ===================== -->
+    <button id="backToTop" aria-label="Back to top">
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.5"
+      >
+        <polyline points="18 15 12 9 6 15" />
+      </svg>
+    </button>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
